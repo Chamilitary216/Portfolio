@@ -1,0 +1,52 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.width {
+    max-width: 100%;
+    padding: 0 30px;
+    margin: auto
+}
+    
+
+
+
+ /* Styling for Navbar */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    background: rgb(177, 177, 177);
+}
+.navbar .logo {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: white;
+    font-size: 16px;
+}
+
+
+.navbar .width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span {
+    color: teal;
+    font-weight: 700;
+    
+}
+
