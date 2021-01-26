@@ -16,25 +16,7 @@ span {
 }
     
 
-/* Universal Styling */
-section {
-    padding: 100px 0;
 
-}
-
-.about, .services, .skills, .projects {
-    font-family: 'EB Garamond', serif;
-}
-
-section .title{
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: 'Frank Ruhl Libre', serif;
-}
 
  /* Styling for Navbar */
 
@@ -231,11 +213,7 @@ section{
     background: none;
 }
 
-/* Contact Me Styling */
 
-.contact .title::after{
-    content: "Reach Out To Me";
-}
 
 /* Mobile Responsiveness */
 @media (max-width: 1300px){
@@ -287,37 +265,7 @@ section{
         font-size: 25px;
     }
 
-    .home .home-content .ptext2 {
-        font-size: 70px;
-    }
-
-    .home .home-content .ptext3 {
-        font-size: 35px;
-    }
-
-    .home .home-content a {
-        font-size: 23px;
-        padding: 10px 30px;
-    }
-
-    .max-width{
-        max-width: 800px;
-    }
-
-    .about .about-content .column {
-        width: 50%;
-    }
-
-    .about .about-content .column .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-
-    }
-
-    .about .about-content .right{
-        flex: 100%;
-    }
+    
 
 
 }
