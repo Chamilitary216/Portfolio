@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+span {
+    color: teal;
+    font-weight: 700;
+    
+}
 .width {
     max-width: 100%;
     padding: 0 30px;
@@ -44,9 +49,30 @@
     justify-content: space-between;
 }
 
-span {
-    color: teal;
-    font-weight: 700;
-    
+
+/* Styling for Home */
+
+.home {
+    display: flex;
+    background: url(./Assests/black-wallpapers.png) no-repeat center;
+    height: 100vh;
+    color: #ffffff;
+    min-height: 500px;
+    font-family:;
+
 }
 
+.home .home-content .ptext1 {
+    font-size: 25px;
+}
+
+.home .home-content .ptext2 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .ptext3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
