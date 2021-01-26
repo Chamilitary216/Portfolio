@@ -5,14 +5,25 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Chris Portfolio</title>
-        <meta name="description" content="">
+        <meta name="Portfolio" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- JQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     </head>
     <body>
 
+        <!-- Nav Bar -->
         <nav class = "navbar">
-            <div class = "width">
+            <div class = "max-width">
                 <div class = "logo"> <span>C</span>hris <span>C</span>urry <span>C</span>odez </div>
                 <ul class = "menu">
                     <li><a href = "#home" class = "menu-btn">Home</a></li>
@@ -21,6 +32,9 @@
                     <li><a href = "#projects" class = "menu-btn"> My Recent Projects</a></li>
                     <li><a href = "#contact" class = "menu-btn">Contact</a></li>
                 </ul>
+                <div class = "menu-btn">
+                    <i class = "fas fa-bars"></i>
+                </div>
             </div>
         </nav>
 
@@ -29,30 +43,25 @@
 
 
         <section class = "home" id="home">
-            <div class = "width">
+            <div class = "max-width">
                 <div class = "home-content">
                     <div class = "ptext1"> Hi, my name is</div>
                     <div class = "ptext2"><span>C</span>hris <span>C</span>urry</div>
-                    <div class = "ptext3">Future Web Developer</div>
-                    
-
-                    </div>
-
-                </div>
-                
+                    <div class = "ptext3">Future <span>Web Developer</span></div>
+                 </div>
             </div>
         </section>
+
+        <!-- <p>Aspiring web site designer from Cleveland, Ohio with a passion for coding and developing elegant web apps for everyone needs </p> --> 
 
         <!-- About Me-->
 
         <section class = "about" id="about">
-            <div class = "width">
-                <h2 class = "title">
-                    About Me
-                </h2>
-            <div class = "about-content">
-                <div class = "column left">
-                    <img src = "#" alt = "">
+            <div class = "max-width">
+                <h2 class ="title">About Me</h2>
+                <div class = "about-content">
+                    <div class = "column left">
+                        <img src = "#" alt = "">
                 </div>
             <div class class = "column right">
                 <div class="text">
@@ -66,6 +75,6 @@
 
         
         
-        <script src="" async defer></script>
+        <script src="./script.js"></script>
     </body>
 </html>

@@ -9,7 +9,7 @@ span {
     font-weight: 700;
     
 }
-.width {
+.max-width {
     max-width: 100%;
     padding: 0 30px;
     margin: auto
@@ -24,13 +24,37 @@ span {
     position: fixed;
     width: 100%;
     padding: 10px 0;
-    background: rgb(177, 177, 177);
+    z-index: 999;
+    background: rgb(155, 155, 155);
+    transition: all 0.9s;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+.navbar.sticky {
+    padding: 25px 0;
+    background: teal;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .navbar .logo {
     color: white;
     font-size: 30px;
     font-weight: 500;
 }
+
+.navbar .logo a span {
+    color: teal;
+    transition: .9s;
+}
+
+.navbar .sticky .logo a span {
+    color: white;
+}
+
 
 .navbar .menu li {
     list-style: none;
@@ -39,15 +63,28 @@ span {
 
 .navbar .menu li a{
     color: white;
+    display: block;
     font-size: 16px;
+    margin-left: 25px;
+    transition: color .9s;
+}
+
+.navbar .menu li a:hover {
+    color:teal;
+
+}
+
+.navbar.sticky .menu li a:hover {
+    color: #fff;
 }
 
 
-.navbar .width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.menu-btn {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
 }
+
 
 
 /* Styling for Home */
@@ -58,7 +95,7 @@ span {
     height: 100vh;
     color: #ffffff;
     min-height: 500px;
-    font-family:;
+    font-family: 'Frank Ruhl Libre', serif;
 
 }
 
@@ -75,4 +112,104 @@ span {
 .home .home-content .ptext3 {
     font-size: 40px;
     margin: 5px 0;
+}
+
+
+/* Styling for About Me */
+section{
+    padding: 100px 0;
+}
+
+.about {
+    font-family: ;
+
+}
+
+.about .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Frank Ruhl Libre', serif;
+
+}
+
+.about .title::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    padding: 5px;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.about .title::after {
+    content: "This is Chris";
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    padding: 5px;
+    font-size: 20px;
+    color: teal;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+
+
+
+
+/* Mobile Responsiveness */
+
+@media (max-width: 993px){
+    .max-width {
+        padding: 0 50px;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .menu0btn i.active::before {
+        content: "\f00d" ;
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.7s ease;
+    }
+
+    .navbar .menu.active {
+        display: block;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin:20 0;
+        font-size: 25px;
+    }
 }
