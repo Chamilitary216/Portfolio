@@ -22,7 +22,32 @@ section {
 
 }
 
-.about, .services, .skills, .projects {
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .offer, .projects, .contact {
+    font-family: 'EB Garamond', serif;
+}
+
+.about .about-content, 
+.projects .projects-content,
+.offer .offer-content,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight:500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
     font-family: 'EB Garamond', serif;
 }
 
@@ -139,11 +164,11 @@ section{
 }
 
 .about {
-    font-family: ;
+    font-family: 'Frank Ruhl Libre', serif;
 
 }
 
-.about .title {
+section .title {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -154,7 +179,7 @@ section{
 
 }
 
-.about .title::before {
+section .title::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -166,8 +191,7 @@ section{
     transform: translateX(-50%);
 }
 
-.about .title::after {
-    content: "This is Chris";
+section .title::after {
     position: absolute;
     left: 50%;
     bottom: -7px;
@@ -179,7 +203,12 @@ section{
     transform: translateX(-50%);
 }
 
-.about .about-content {
+.about .title::after{
+    content: "This is me";
+}
+
+.about .about-content,
+.offer .offer-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -230,7 +259,33 @@ section{
     color: teal;
     background: none;
 }
+/* Offerings */
+.offer{
+    background: rgb(48, 48, 48);
+    color: white;
+}
+.offer .title::before {
+    background: white;
 
+}
+.offer .title::after{
+    background: rgb(48, 48, 48);
+    content: "What I can offer you";
+    
+}
+
+.offer .offer-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    border-radius: 7px;
+    padding: 20px 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.text {
+    color: teal;
+}
 /* Contact Me Styling */
 
 .contact .title::after{
