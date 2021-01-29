@@ -281,16 +281,156 @@ section .title::after {
     padding: 20px 25px;
     cursor: pointer;
     text-align: center;
+    transition: all 0.7s ease;
 }
 
-.text {
+.offer .offer-content .card i{
+    font-size: 50px;
+    color: rgb(2, 186, 186);
+}
+.offer .offer-content .card .text {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 10px 0 7px;
     color: teal;
 }
-/* Contact Me Styling */
 
+.offer .offer-content .card .box {
+    transition: all 0.7s ease;
+}
+
+.offer .offer-content .card:hover .box {
+    transform: scale(1.10);
+
+}
+
+/* Project */
+
+
+/* Contact Me Styling */
+.contact{
+    background: rgb(48, 48, 48);
+    color: white;
+}
 .contact .title::after{
     content: "Reach Out To Me";
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    padding: 5px;
+    font-size: 20px;
+    color: teal;
+    padding: 5px;
+    background: rgb(48, 48, 48);
+    transform: translateX(-50%);
 }
+.contact .contact-content .column{ 
+    width:calc(50% - 30px);
+
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .info i {
+    font-size: 26px;
+    color: teal;
+}
+.contact .contact-content .left .icons {
+    margin: 15px 0;
+}
+
+.contact .contact-content .row i {
+    font-size: 20px;
+    color: teal;
+}
+
+.contact .contact-content .info .sub-title{
+    color: rgb(255, 255, 255);
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+
+.contact .right form .field {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .email {
+    margin-right: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'EB Garamond', serif;
+}
+
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button{
+    height: 45px;
+    width: 200px;
+    
+}
+
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid teal;
+    background: teal;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    transition: all 0.7 ease;
+}
+
+.contact .right form .button button:hover {
+    color:teal;
+    background: none;
+}
+
 
 /* Mobile Responsiveness */
 @media (max-width: 1300px){
@@ -373,6 +513,11 @@ section .title::after {
     .about .about-content .right{
         flex: 100%;
     }
+
+   .offer .offer-content .card {
+       width: 100%;
+
+   } 
 
 
 }
