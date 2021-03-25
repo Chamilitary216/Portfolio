@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 span {
     color: teal;
     font-weight: 700;
@@ -22,11 +27,6 @@ section {
 
 }
 
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
 .about, .offer, .projects, .contact {
     font-family: 'EB Garamond', serif;
 }
@@ -306,6 +306,66 @@ section .title::after {
 
 /* Project */
 
+.projects-slider{
+    position: relative;
+
+}
+
+.projects-slider .slider-title {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.projects-slider .next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color: teal;
+    cursor: pointer;
+}
+
+.projects-slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: teal;
+    cursor: pointer;
+
+}
+
+
+.projects-slider .projects-wrapper {
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+
+.projects-slider .projects-wrapper .projects {
+    width: 300px;
+    height: 330px;
+    margin: 0px 10px;
+    display: inline-block;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem rgb(120, 120, 120);
+} 
+
+
+
+.projects-slider .projects-wrapper .projects .slider-image {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+
 
 /* Contact Me Styling */
 .contact{
@@ -364,6 +424,15 @@ section .title::after {
 
 .contact .contact-content .info .sub-title{
     color: rgb(255, 255, 255);
+}
+
+.contact .contact-content .info .sub-title a{
+    color: rgb(1, 201, 201);
+    text-decoration: underline;
+}
+
+.contact .contact-content .info .sub-title a:hover {
+    color: rgb(58, 58, 250);
 }
 .contact .contact-content .info .head{
     font-weight: 500;
